@@ -1,0 +1,22 @@
+{
+  "name": "hoja-de-vida",
+  "version": "1.0.0",
+  "description": "hoja de vida",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "daniel",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
