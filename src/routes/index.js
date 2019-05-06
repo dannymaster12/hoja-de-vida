@@ -16,10 +16,13 @@ router.get('/gracias', (req, res) => {
 
 router.post('/guardar', (req, res) => {
     const HV = new hojavida(req.body);
-    if (HV.save()) {
-        res.redirect('/gracias');
-    } else {
-        console.log('error')
-    }
-})
+    HV.save()
+        .then(HV => {
+            res.redirect('/gracias')
+            console.log(HV)
+        })
+        .catch(err => {
+            res.send(err);
+        })
+});
 module.exports = router;

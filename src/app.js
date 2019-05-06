@@ -7,7 +7,7 @@ const app = express();
 
 //localhost://hola
 //coneccion a la base de datos
-mongoose.connect('mongodb+srv://daniel:danielito123@cluster0-c1iwu.mongodb.net/test?retryWrites=true')
+mongoose.connect('mongodb://practicas_elyon:elyonyireh123@mongodb-1974-0.cloudclusters.net:10009/hojas_vida?authSource=admin')
     .then(db=> console.log('base de datos conectada'))
     .catch(err => console.log('err' + ' ' + err));
 

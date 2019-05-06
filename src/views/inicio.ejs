@@ -32,137 +32,182 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="../public/main.js"></script>
 </head>
-
 <body>
-    <form class="contact100-form validate-form" method="POST" action="/guardar">
-	<div class="wrap">
-		<ul class="tabs">
-			<li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Informacion personal</span></a></li>
-			<li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Formacion academica</span></a></li>
-			<li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Programa de formacion actual</span></a></li>
-			<li><a href="#tab4"><span class="fa fa-bookmark"></span><span class="tab-text">Experiencialaboral</span></a></li>
-			<li><a href="#tab5"><span class="fa fa-briefcase"></span><span class="tab-text">Referencia personal</span></a></li>
 
-		</ul>
-
-		<div class="secciones">
-			<article id="tab1">
-				<div class="container-contact100">
-					<div class="wrap-contact100">
-							<span class="contact100-form-title">
-								Informacion personal
-							</span>
-							<div class="font-awesome">
-								<label for="image" class="col-sm-2 control-label"><h2 class="ror">Foto</h2></label>
-								<div class="col-sm-5">
-									<input type="file" class="for-control" id="imagen" name="imagen" accept="image/*">
+		<div class="wrap">
+			<ul class="tabs">
+				<li><a href="#tab1"><span class="fa fa-home"></span><span class="tab-text">Informacion personal</span></a>
+				</li>
+				<li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text">Formacion academica</span></a>
+				</li>
+				<li><a href="#tab3"><span class="fa fa-briefcase"></span><span class="tab-text">Programa de formacion
+							actual</span></a></li>
+				<li><a href="#tab4"><span class="fa fa-bookmark"></span><span class="tab-text">Experiencia
+							laboral</span></a></li>
+				<li><a href="#tab5"><span class="fa fa-briefcase"></span><span class="tab-text">Referencia
+							personal</span></a></li>
+	
+			</ul>
+	
+			<div class="secciones">
+				<article id="tab1">
+					<div class="container-contact100">
+	10:41 p. m. 2/05/2019					<div class="wrap-contact100">
+							<form class="contact100-form validate-form" method="POST" action="/guardar">
+								<span class="contact100-form-title">
+									Informacion personal
+								</span>
+								<div class="font-awesome">
+									<label for="image" class="col-sm-2 control-label"><h2 class="ror">Foto</h2></label>
+									<div class="col-sm-5">
+										<input type="file" class="for-control" id="imagen" name="imagenes" accept="image/*">
+									</div>
 								</div>
-							</div>
-
-							<div class="wrap" data-validate="Porfavor elije tu Programa">
-								<span class="label">Programa*</span>
-								<input class="input" type="text" name="programa" placeholder="Escriva aqui su Programa">
-							</div>
-
-							<div class="wrap-input100 validate-input bg1" data-validate="Nombre">
-								<span class="label-input100">Nombre*</span>
-								<input class="input100" type="text" name="nombre" placeholder="Nombre">
-
-							</div>
-							<div class="wrap-input100 validate-input bg1" data-validate="Apellido">
-								<span class="label-input100">Apellido*</span>
-								<input class="input100" type="text" name="apellido" placeholder="Apellido">
-							</div>
-
-
-
-							<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Cedula">
-								<span class="label-input100">Cedula *</span>
-								<input class="input100" type="text" name="Cedula" placeholder="Cedula">
-							</div>
-
-							<div class="wrap-input100 bg1 rs1-wrap-input100">
-								<span class="label-input100">Direccion</span>
-								<input class="input100" type="text" name="direccion" placeholder="Direccion">
-							</div>
-							<div class="wrap-input100 bg1 rs1-wrap-input100">
-								<span class="label-input100">Telefono/Celular</span>
-								<input class="input100" type="text" name="telefono" placeholder="Telefono/Celular">
-							</div>
-							<div class="wrap-input100 bg1 rs1-wrap-input100">
-								<span class="label-input100">N° de lic. de conducir</span>
-								<input class="input100" type="text" name="n_licencia"
-									placeholder="N° de lic. de conducir">
-							</div>
-							<div class="wrap-input100 bg1 rs1-wrap-input100">
-								<span class="label-input100">N° libreta militar</span>
-								<input class="input100" type="text" name="n_libreta" placeholder="N° libreta militar">
-							</div>
-
-							<div class="wrap-input100 input100-select bg1">
-								<span class="label-input100">Estado civil*</span>
-								<div>
-									<select class="js-select2" name="estado_civil">
-										<option value="Soltero">Soltero</option>
-										<option value="Casado">Casado</option>
-										<option value="union-libre">Union libre</option>
-
-									</select>
-									<div class="dropDownSelect2"></div>
+	
+								<div class="wrap" data-validate="Porfavor elije tu Programa">
+									<span class="label">Programa*</span>
+									<input class="input" type="text" name="programa" placeholder="Escriva aqui su Programa">
 								</div>
-							</div>
-
-							<div class="w-full dis-none js-show-service">
-								<div class="wrap-contact100-form-radio">
-									<span class="label-input100">What type of products do you sell?</span>
-
-
-									<div class="contact100-form-range-bar">
-										<div id="filter-bar">
-
+	
+								<div class="wrap-input100 validate-input bg1" data-validate="Nombre">
+									<span class="label-input100">Nombre*</span>
+									<input class="input100" type="text" name="nombre" placeholder="Nombre">
+	
+								</div>
+								<div class="wrap-input100 validate-input bg1" data-validate="Apellido">
+									<span class="label-input100">Apellido*</span>
+									<input class="input100" type="text" name="apellido" placeholder="Apellido">
+								</div>
+	
+	
+	
+								<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Cedula">
+									<span class="label-input100">Cedula *</span>
+									<input class="input100" type="text" name="Cedula" placeholder="Cedula">
+								</div>
+	
+								<div class="wrap-input100 bg1 rs1-wrap-input100">
+									<span class="label-input100">Direccion</span>
+									<input class="input100" type="text" name="Direccion" placeholder="Direccion">
+								</div>
+								<div class="wrap-input100 bg1 rs1-wrap-input100">
+									<span class="label-input100">Telefono/Celular</span>
+									<input class="input100" type="text" name="telefono" placeholder="Telefono/Celular">
+								</div>
+								<div class="wrap-input100 bg1 rs1-wrap-input100">
+									<span class="label-input100">N° de lic. de conducir</span>
+									<input class="input100" type="text" name="n_licencia"
+										placeholder="N° de lic. de conducir">
+								</div>
+								<div class="wrap-input100 bg1 rs1-wrap-input100">
+									<span class="label-input100">N° libreta militar</span>
+									<input class="input100" type="text" name="n_libreta" placeholder="N° libreta militar">
+								</div>
+	
+								<div class="wrap-input100 input100-select bg1">
+									<span class="label-input100">Estado civil*</span>
+									<div>
+										<select class="js-select2" name="estado_civil">
+												<option></option>
+											<option value="Soltero">Soltero</option>
+											<option value="Casado">Casado</option>
+											<option value="Union libre">Union libre</option>
+	
+										</select>
+										<div class="dropDownSelect2"></div>
+									</div>
+								</div>
+	
+								<div class="w-full dis-none js-show-service">
+									<div class="wrap-contact100-form-radio">
+										<span class="label-input100">What type of products do you sell?</span>
+	
+	
+										<div class="contact100-form-range-bar">
+											<div id="filter-bar">
+	
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="wrap-input100 validate-input bg1" data-validate="Lugar y fecha de nacimiento">
-								<span class="label-input100">Lugar y fecha de nacimiento*</span>
-								<input class="input100" type="date" name="fecha_nacimiento"
-									placeholder="Lugar y fecha de nacimiento">
-                            </div>
-                            
-							<div class="wrap-input100 validate-input bg1" data-validate="Email (e@a.x)">
-								<span class="label-input100">Email*</span>
-								<input class="input100" type="text" name="email" placeholder="Email">
-                            </div>
-                            
-							<div class="wrap-input100 input100-select bg1" data-validate="N° de hijos">
-								<span class="label-input100">N° de hijos*</span>
-								<div>
-                                    <select class="js-select2" name="n_hijos">
-										<option></option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="no tengo">No tengo</option>
-
-									</select>
-									<div class="dropDownSelect2"></div>
+								<div class="wrap-input100 validate-input bg1" data-validate="Lugar y fecha de nacimiento">
+									<span class="label-input100">Lugar y fecha de nacimiento*</span>
+									<input class="input100" type="date" name="fecha_nacimiento"
+										placeholder="Lugar y fecha de nacimiento">
 								</div>
-							</div>
-                            
-							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" type="submit">
-									<span>
-										Registrar
-										<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-                        </form>
-                    
+								<div class="wrap-input100 validate-input bg1" data-validate="Email (e@a.x)">
+									<span class="label-input100">Email*</span>
+									<input class="input100" type="text" name="email" placeholder="Email">
+								</div>
+								<div class="wrap-input100 input100-select bg1" data-validate="N° de hijos">
+									<span class="label-input100">N° de hijos*</span>
+									<div>
+										<select class="js-select2" name="n_hijos">
+											<option></option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="no tengo">No tengo</option>
+	
+										</select>
+										<div class="dropDownSelect2"></div>
+									</div>
+								</div>
+	
+								<div class="container-contact100-form-btn" type="submit">
+									<button class="contact100-form-btn">
+										<span>
+											Registrar
+											<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+										</span>
+									</button>
+								</div>
+							</form>
+						</div>
 					</div>
-				</div>
+	
+	<!--===============================================================================================-->
+	<script src="../public/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../public/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../public/vendor/bootstrap/js/popper.js"></script>
+	<script src="../public/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../public/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+		});
+
+	</script>
+	<!--===============================================================================================-->
+	<script src="../public/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../public/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="../public/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="../public/vendor/noui/nouislider.min.js"></script>
+	<!--========================================================================================-->
+	<script src="../public/js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+	</article>
+	
 				<!--===============================================================================================-->
 				<script src="../public/vendor/jquery/jquery-3.2.1.min.js"></script>
 				<!--===============================================================================================-->
@@ -202,182 +247,27 @@
 
 					gtag('config', 'UA-23581568-13');
 				</script>
-			</article>
-			<article id="tab2">
-				<h1>Formacion academica</h1>
-				<div class="container-contact100">
-                        <div class="wrap-contact100">
-                                <span class="contact100-form-title">
-                                    Informacion personal
-                                </span>
-                                <div class="font-awesome">
-                                    <label for="image" class="col-sm-2 control-label"><h2 class="ror">Foto</h2></label>
-                                    <div class="col-sm-5">
-                                        <input type="file" class="for-control" id="imagen" name="imagen" accept="image/*">
-                                    </div>
-                                </div>
-    
-                                <div class="wrap" data-validate="Porfavor elije tu Programa">
-                                    <span class="label">Programa*</span>
-                                    <input class="input" type="text" name="programa" placeholder="Escriva aqui su Programa">
-                                </div>
-    
-                                <div class="wrap-input100 validate-input bg1" data-validate="Nombre">
-                                    <span class="label-input100">Nombre*</span>
-                                    <input class="input100" type="text" name="nombre" placeholder="Nombre">
-    
-                                </div>
-                                <div class="wrap-input100 validate-input bg1" data-validate="Apellido">
-                                    <span class="label-input100">Apellido*</span>
-                                    <input class="input100" type="text" name="apellido" placeholder="Apellido">
-                                </div>
-    
-    
-    
-                                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Cedula">
-                                    <span class="label-input100">Cedula *</span>
-                                    <input class="input100" type="text" name="Cedula" placeholder="Cedula">
-                                </div>
-    
-                                <div class="wrap-input100 bg1 rs1-wrap-input100">
-                                    <span class="label-input100">Direccion</span>
-                                    <input class="input100" type="text" name="direccion" placeholder="Direccion">
-                                </div>
-                                <div class="wrap-input100 bg1 rs1-wrap-input100">
-                                    <span class="label-input100">Telefono/Celular</span>
-                                    <input class="input100" type="text" name="telefono" placeholder="Telefono/Celular">
-                                </div>
-                                <div class="wrap-input100 bg1 rs1-wrap-input100">
-                                    <span class="label-input100">N° de lic. de conducir</span>
-                                    <input class="input100" type="text" name="n_licencia"
-                                        placeholder="N° de lic. de conducir">
-                                </div>
-                                <div class="wrap-input100 bg1 rs1-wrap-input100">
-                                    <span class="label-input100">N° libreta militar</span>
-                                    <input class="input100" type="text" name="n_libreta" placeholder="N° libreta militar">
-                                </div>
-    
-                                <div class="wrap-input100 input100-select bg1">
-                                    <span class="label-input100">Estado civil*</span>
-                                    <div>
-                                        <select class="js-select2" name="estado_civil">
-                                            <option value="Soltero">Soltero</option>
-                                            <option value="Casado">Casado</option>
-                                            <option value="union-libre">Union libre</option>
-    
-                                        </select>
-                                        <div class="dropDownSelect2"></div>
-                                    </div>
-                                </div>
-    
-                                <div class="w-full dis-none js-show-service">
-                                    <div class="wrap-contact100-form-radio">
-                                        <span class="label-input100">What type of products do you sell?</span>
-    
-    
-                                        <div class="contact100-form-range-bar">
-                                            <div id="filter-bar">
-    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap-input100 validate-input bg1" data-validate="Lugar y fecha de nacimiento">
-                                    <span class="label-input100">Lugar y fecha de nacimiento*</span>
-                                    <input class="input100" type="date" name="fecha_nacimiento"
-                                        placeholder="Lugar y fecha de nacimiento">
-                                </div>
-                                
-                                <div class="wrap-input100 validate-input bg1" data-validate="Email (e@a.x)">
-                                    <span class="label-input100">Email*</span>
-                                    <input class="input100" type="text" name="email" placeholder="Email">
-                                </div>
-                                
-                                <div class="wrap-input100 input100-select bg1" data-validate="N° de hijos">
-                                    <span class="label-input100">N° de hijos*</span>
-                                    <div>
-                                        <select class="js-select2" name="n_hijos">
-                                            <option></option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="no tengo">No tengo</option>
-    
-                                        </select>
-                                        <div class="dropDownSelect2"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="container-contact100-form-btn">
-                                    <button class="contact100-form-btn" type="submit">
-                                        <span>
-                                            Registrar
-                                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                            </form>
-                        
-                        </div>
-                    </div>
-                    <!--===============================================================================================-->
-                    <script src="../public/vendor/jquery/jquery-3.2.1.min.js"></script>
-                    <!--===============================================================================================-->
-                    <script src="../public/vendor/animsition/js/animsition.min.js"></script>
-                    <!--===============================================================================================-->
-                    <script src="../public/vendor/bootstrap/js/popper.js"></script>
-                    <script src="../public/vendor/bootstrap/js/bootstrap.min.js"></script>
-                    <!--===============================================================================================-->
-                    <script src="../public/vendor/select2/select2.min.js"></script>
-                    <script>
-                        $(".js-select2").each(function () {
-                            $(this).select2({
-                                minimumResultsForSearch: 20,
-                                dropdownParent: $(this).next('.dropDownSelect2')
-                            });
-    
-    
-                        });
-    
-                    </script>
-                    <!--===============================================================================================-->
-                    <script src="../public/vendor/daterangepicker/moment.min.js"></script>
-                    <script src="../public/vendor/daterangepicker/daterangepicker.js"></script>
-                    <!--===============================================================================================-->
-                    <script src="../public/vendor/countdowntime/countdowntime.js"></script>
-                    <!--===============================================================================================-->
-                    <script src="../public/vendor/noui/nouislider.min.js"></script>
-                    <!--========================================================================================-->
-                    <script src="../public/js/main.js"></script>
-    
-                    <!-- Global site tag (gtag.js) - Google Analytics -->
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-                    <script>
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag() { dataLayer.push(arguments); }
-                        gtag('js', new Date());
-    
-                        gtag('config', 'UA-23581568-13');
-                    </script>
-                </article>
-			</article>
-			<article id="tab3">
-				<h1>Programa de formacion actual</h1>
-			
-			</article>
-			<article id="tab4">
-				<h1>Experiencia laboral</h1>
-			
-			</article>
-			<article id="tab5">
-				<h1>Referencia personal</h1>
-				
-			</article>
-		</div>
+	</article>
+	</article>
+	<article id="tab3">
+			<form action="/guardar" method="POST">
+				<input type="text" name="programa">
+				<input type="submit">
+			</form>
+
+	</article>
+	<article id="tab4">
+		<h1>Experiencia laboral</h1>
+
+	</article>
+	<article id="tab5">
+		<h1>Referencia personal</h1>
+
+	</article>
 	</div>
-    <script src="/src/public/js/mainjs.js"></script>
-</form>
+	</div>
+	<script src="/src/public/js/mainjs.js"></script>
+	</form>
 </body>
 
 </html>
